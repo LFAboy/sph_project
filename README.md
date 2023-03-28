@@ -23,7 +23,7 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-
+项目来源：本项目通过学习尚硅谷发布于哔哩哔哩上的视频（VUE项目实战）后制作。
 该项目没有做移动端适配，在PC端访问效果更好。
 
 该项目导航栏只有 登录，注册，我的订单，我的购物车四个可用。
