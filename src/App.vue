@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Header></Header>
+    <router-view></router-view>
+    <Footer v-show="$route.meta.isShowFooter"></Footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 export default {
-  name: 'App',
+  name: "rootCp",
   components: {
-    HelloWorld
+    Header,
+    Footer,
+  },
+  mounted() {
+    // 三级联动的数据请求，由于三级联动是一个全局组件，多个模块需要用到，而模块之间切换的时候，就会销毁和挂载，所以把请求放到这里更合适，请求数就降到了 1
+    this.$store.dispatch("categoryList");
+  },
+  beforeDestroy() {
+    removeToken();
   }
-}
+}; 
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

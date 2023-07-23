@@ -1,0 +1,35 @@
+[
+  {
+    "consignee": "李先生",
+    "fullAddress": "北京北京市昌平区天通苑北路308号",
+    "id": 5,
+    "isDefault": "1",
+    "phoneNum": "15011112222",
+    "provinceId": 1,
+    "regionId": 1,
+    "userAddress": "北京市昌平区天通苑北路308号",
+    "userId": 2
+  },
+  {
+    "consignee": "张女士",
+    "fullAddress": "北京北京市朝阳区翠柳街157号109号",
+    "id": 6,
+    "isDefault": "0",
+    "phoneNum": "15236523651",
+    "provinceId": 1,
+    "regionId": 1,
+    "userAddress": "北京市朝阳区翠柳街157号109号",
+    "userId": 2
+  },
+  {
+    "consignee": "刘先生",
+    "fullAddress": "北京北京市丰台区六里桥2号街1203号",
+    "id": 7,
+    "isDefault": "0",
+    "phoneNum": "13567867875",
+    "provinceId": 1,
+    "regionId": 1,
+    "userAddress": "北京市丰台区六里桥2号街1203号",
+    "userId": 2
+  }
+]
