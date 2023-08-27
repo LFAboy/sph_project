@@ -1,0 +1,26 @@
+{
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "public"
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "module": "esnext",
+    "target": "ES2015",
+    "noEmitOnError": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "outDir": "./dist",
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true,
+  }
+}

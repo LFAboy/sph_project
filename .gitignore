@@ -1,0 +1,6 @@
+node_modules
+dist
+public/**/*.png
+public/**/*.jpg
+src/**/*.png
+src/**/*.jpg
